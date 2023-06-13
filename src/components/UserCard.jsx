@@ -1,6 +1,6 @@
 
 
-const Usercard = ({ user, deleteUserbyId, setUpdateInfo, setFormClose}) => {
+const UserCard = ({ user, deleteUserbyId, setUpdateInfo, setFormClose}) => {
 
     const handleDelete = () => {
         deleteUserbyId('/users', user.id)
@@ -38,4 +38,4 @@ const Usercard = ({ user, deleteUserbyId, setUpdateInfo, setFormClose}) => {
     )
 }
 
-export default Usercard
+export default UserCard

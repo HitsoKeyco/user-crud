@@ -1,5 +1,4 @@
 
-
 const UserCard = ({ user, deleteUserbyId, setUpdateInfo, setFormClose}) => {
 
     const handleDelete = () => {

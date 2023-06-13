@@ -122,7 +122,7 @@ button:hover{
     background-color: rgb(255, 255, 255);
     padding: 1.5em;
     border-radius: 12px;
-    width: clamp(100px, 50%, 400px);
+    width: clamp(100px, 100%, 400px);
     
 
     display: flex;
@@ -226,4 +226,21 @@ input:focus{
 
 .button_header:hover{
     background-color: rgb(72, 99, 250);
+}
+
+.trash{
+    background-color: red;
+    
+}
+
+.bxs-trash{
+    color: white;
+}
+
+.bx-pencil{
+    color: white;
+}
+
+.add{
+    background-color: green;
 }

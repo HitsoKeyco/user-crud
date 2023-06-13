@@ -27,8 +27,8 @@ const UserCard = ({ user, deleteUserbyId, setUpdateInfo, setFormClose}) => {
                         <span className = "item">{user.birthday}</span>
                     </li>
                     <div className="buttons">
-                        <button onClick={handleDelete}><i className='bx bxs-trash'></i></button>
-                        <button onClick={handleEdit}><i className='bx bx-pencil'></i></button> 
+                        <button className="trash" onClick={handleDelete}><i className='bx bxs-trash'></i></button>
+                        <button className="add" onClick={handleEdit}><i className='bx bx-pencil'></i></button> 
                     </div>
                 </ul>
             </div>

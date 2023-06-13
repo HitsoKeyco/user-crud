@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
 import './App.css'
-import useFetch from './assets/hooks/useFetch'
-import FormUsers from './assets/components/FormUsers'
-import UserCard from './assets/components/UserCard'
+import useFetch from './hooks/useFetch'
+import FormUsers from './components/FormUsers'
+import UserCard from './components/UserCard'
 
 function App() {
   

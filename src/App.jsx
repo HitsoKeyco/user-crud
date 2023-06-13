@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import './App.css'
 import useFetch from './hooks/useFetch'
 import FormUsers from './components/FormUsers'
-import Usercard from './components/Usercard'
+import UserCard from './components/Usercard'
 
 function App() {
   
@@ -38,7 +38,7 @@ function App() {
         <div className='content_card'>
           {
             users?.map(user => (
-              <Usercard 
+              <UserCard 
               key={user.id} 
               user={user} 
               

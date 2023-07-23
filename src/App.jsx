@@ -8,11 +8,12 @@ import UserCard from './components/UserCard';
 
 function App() {
   
-  const baseURL ='https://users-crud.academlo.tech'
-  const[ users, getAllUser, createNewRegister, deleteUserbyId, updateRegisterbyId] = useFetch(baseURL)
+  const baseURL ='https://user-crud-service-vl3m.onrender.com/api/v1'
+  const[ users, getAllUser, createNewRegister, deleteUserbyId, updateRegisterbyId] = useFetch(baseURL) 
   
   const [updateInfo, setUpdateInfo] = useState()
   const [formClose, setFormClose] = useState(true)
+
   useEffect(() => {
     getAllUser('/users')
   }, [])

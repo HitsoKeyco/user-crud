@@ -1,12 +1,12 @@
 import { useState } from 'react'
 import axios from 'axios'
-const useFetch = (baseUrl) => {
+const useFetch = (baseURL) => {
 
     const [infoApi, setInfoApi] = useState()
 
     //READ
     const getAllUser = (path) => {
-        const url = `${baseUrl}${path}/`
+        const url = `${baseURL}${path}/`
         axios.get(url)
         .then(res => setInfoApi(res.data))
         .catch(err => console.log(err))
@@ -14,7 +14,7 @@ const useFetch = (baseUrl) => {
 
     // CREATE
     const createNewRegister = (path, data) => {
-        const url = `${baseUrl}${path}/`
+        const url = `${baseURL}${path}/`
         axios.post(url, data)
         .then(res => {
             console.log(res.data)
@@ -25,7 +25,7 @@ const useFetch = (baseUrl) => {
 
     //DELETE
     const deleteUserbyId = (path, id) => {
-        const url = `${baseUrl}/${path}/${id}/`
+        const url = `${baseURL}/${path}/${id}/`
         axios.delete(url)
         .then(res => {
             console.log(res.data)
@@ -37,7 +37,7 @@ const useFetch = (baseUrl) => {
 
     //UPDATE
     const updateRegisterbyId = (path, id, data) => {
-        const url = `${baseUrl}/${path}/${id}/`
+        const url = `${baseURL}/${path}/${id}/`
         axios.put(url, data)
         .then(res => {
             console.log(res.data)
